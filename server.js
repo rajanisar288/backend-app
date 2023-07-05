@@ -21,6 +21,11 @@ import projectRoutes from "./routes/project.js"
 app.use(express.json());
 
 // handle route
+app.get('/', (req, res, next) =>{
+    res.send({
+        message:"hello world"
+    })
+})
 app.use('/api/v2' , authRoutes)
 app.use('/api/v2' , projectRoutes)
 
