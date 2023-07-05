@@ -21,7 +21,7 @@ import projectRoutes from "./routes/project.js"
 app.use(express.json());
 
 // handle route
-app.get('/', (req, res, next) =>{
+app.get('/', (req, res) =>{
     res.send({
         message:"hello world"
     })
